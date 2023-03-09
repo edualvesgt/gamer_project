@@ -1,0 +1,29 @@
+/* fonts */
+@font-face {
+    font-family:"Titilium_web";
+    src: url(../assests/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Quicksand";
+    src: url(../assests/fonts/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Inter" ;
+    src: url(../assests/fonts/Inter/static/Inter-Regular.ttf);
+}
+
+
+
+
+
+
+/* RESET DA PAGINA */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******* MOBILE FIRST ********/
