@@ -26,4 +26,74 @@
     box-sizing: border-box;
 }
 
+.layout_grid{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    /* border: 1px solid red; */
+
+}
+
 /******* MOBILE FIRST ********/
+
+/* COR DE FUNDO */
+body{
+    color:white;
+    background-color: #1B1426;
+}
+
+
+/* HEADER */
+
+header{
+    height: 60px;
+    background-color: #1B1426;
+
+}
+
+
+/* HEADER TOP */
+
+/* HIDE HEADER TOP IT ONLY APPEARS ON THE DESKTOP */
+header .header_top{
+
+    display: none;
+}
+
+/* HEADER BOTTOM */
+
+header .site_between_center {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_bottom{
+    height: 100%;
+}
+
+header .header_bottom img.menu   {
+    width: 86px;
+}
+
+
+header .header_bottom nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: grey;
+    border: solid 1 px white;
+
+}
+
+ header .header_bottom .user_menu {
+    display: none;
+ }
