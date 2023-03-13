@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Gamer</title>
-    <link rel="stylesheet" href="../gamer/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,23 +15,23 @@
             <div class="layout_grid">
                 <div class="contact_right">
                     <div class="smartphone">
-                        <img src="../gamer/assests/icons/icone_telefone.svg" alt="icons phone">
+                        <img src="assets/icons/icone_telefone.svg" alt="icons phone">
                         <span>(11) 0900-1010</span>
                     </div>
 
                     <div class="email">
-                        <img src="../gamer/assests/icons/icone_email.svg" alt="icons email">
+                        <img src="assets/icons/email.svg" alt="icons email">
                         <span>contato@gamer.com.br</span>
                     </div>
                 </div>
                 <div class="social_media">
-                    <a href=""> <img src="../gamer/assests/icons/Nav facebook.svg" alt="icons/link facebook">
+                    <a href=""> <img src="assets/icons/Nav facebook.svg" alt="icons/link facebook">
                     </a>
 
-                    <a href=""> <img src="../gamer/assests/icons/Likedin NAV.svg" alt="icons/link likedin">
+                    <a href=""> <img src="assets/icons/Likedin NAV.svg" alt="icons/link likedin">
                     </a>
 
-                    <a href=""> <img src="../gamer/assests/icons/nav instagram.svg" alt="icons/link instagram">
+                    <a href=""> <img src="assets/icons/nav instagram.svg" alt="icons/link instagram">
                     </a>
                 </div>
 
@@ -40,11 +40,13 @@
         <div class="header_bottom">
 
             <div class="layout_grid site_between_center">
-                <!-- icon menu -->
-                <img class="mobile_menu" src="../gamer/assests/icons/menu hambueguer.svg" alt="mobile_menu">
-                <img class="menu" src="../gamer/assests/images/logotipo-gamer.svg" alt="typelogo gamer">
 
-                <nav class="Menu">
+                <!-- icon menu -->
+
+                <img class="mobile_menu" src="assets/icons/menu hambueguer.svg" alt="mobile_menu" onclick="showMenu()">
+                <img class="menu" src="assets/images/logotipo-gamer.svg" alt="typelogo gamer">
+
+                <nav class="Menu" id="Menu">
 
                     <a href=""> Home</a>
                     <a href=""> Players</a>
@@ -52,39 +54,39 @@
                     <a href=""> News</a>
 
                     <!-- You can only see in Mobile-->
-                    <div class="smartphone">
-                        <img src="../gamer/assests/icons/icone_telefone.svg" alt="icons phone">
+                    <a class="smartphone">
+                        <img src="assets/icons/icone_telefone.svg" alt="icons phone">
                         <span>(11) 0900-1010</span>
-                    </div>
+                    </a>
 
-                    <div class="email">
-                        <img src="../gamer/assests/icons/icone_email.svg" alt="icons email">
+                    <a class="email">
+                        <img src="assets/icons/email.svg" alt="icons email">
                         <span>contato@gamer.com.br</span>
-                    </div>
+                    </a>
 
                     <div class="social_media">
-                        <a href=""> <img src="../gamer/assests/icons/Nav facebook.svg" alt="icons/link facebook">
+                        <a href=""> <img src="assets/icons/Nav facebook.svg" alt="icons/link facebook">
                         </a>
 
-                        <a href=""> <img src="../gamer/assests/icons/Likedin NAV.svg" alt="icons/link likedin">
+                        <a href=""> <img src="assets/icons/Likedin NAV.svg" alt="icons/link likedin">
                         </a>
 
-                        <a href=""> <img src="../gamer/assests/icons/nav instagram.svg" alt="icons/link instagram">
+                        <a href=""> <img src="assets/icons/nav instagram.svg" alt="icons/link instagram">
                         </a>
                     </div>
 
                 </nav>
                 <!-- user menu -->
-                <img class="user_img" src="../gamer/assests/icons/menu 3 pontos.svg" alt="user_menu">
+                <img class="user_img" src="assets/icons/menu 3 pontos.svg" alt="user_menu">
 
                 <div class="user_menu">
-                    <a href=""> <img src="../gamer/assests/icons/profile.svg" alt="Profile">
+                    <a href=""> <img src="assets/icons/profile.svg" alt="Profile">
                     </a>
 
-                    <a href=""> <img src="../gamer/assests/icons/shop.svg" alt="Shop">
+                    <a href=""> <img src="assets/icons/shop.svg" alt="Shop">
                     </a>
 
-                    <a href=""> <img src="../gamer/assests/icons/search.svg" alt="Search">
+                    <a href=""> <img src="assets/icons/search.svg" alt="Search">
                     </a>
                 </div>
 
@@ -92,6 +94,13 @@
         </div>
 
     </header>
+    <script>
+        function showMenu() {
+
+            document.getElementById("Menu").classList.toggle("showMenu")
+        }
+
+    </script>
 
 </body>
 
