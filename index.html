@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="header_top">
             <div class="layout_grid">
@@ -43,10 +44,10 @@
 
                 <!-- icon menu -->
 
-                <img class="mobile_menu" src="assets/icons/menu hambueguer.svg" alt="mobile_menu" onclick="showMenu()">
+                <img class="mobile_menu" src="assets/icons/menu hambueguer.svg" alt="mobile_menu" onclick="showmenu()">
                 <img class="menu" src="assets/images/logotipo-gamer.svg" alt="typelogo gamer">
 
-                <nav class="Menu" id="Menu">
+                <nav class="Menu" id="click">
 
                     <a href=""> Home</a>
                     <a href=""> Players</a>
@@ -54,6 +55,7 @@
                     <a href=""> News</a>
 
                     <!-- You can only see in Mobile-->
+
                     <a class="smartphone">
                         <img src="assets/icons/icone_telefone.svg" alt="icons phone">
                         <span>(11) 0900-1010</span>
@@ -76,10 +78,12 @@
                     </div>
 
                 </nav>
-                <!-- user menu -->
-                <img class="user_img" src="assets/icons/menu 3 pontos.svg" alt="user_menu">
 
-                <div class="user_menu">
+                <!-- user menu -->
+
+                <img class="user_img" src="assets/icons/menu 3 pontos.svg" alt="user_menu" onclick="clickPoint()">
+
+                <div class="user_menu" id="points">
                     <a href=""> <img src="assets/icons/profile.svg" alt="Profile">
                     </a>
 
@@ -94,11 +98,38 @@
         </div>
 
     </header>
-    <script>
-        function showMenu() {
 
-            document.getElementById("Menu").classList.toggle("showMenu")
+    <main>
+        <div >
+
+            <!-- FIRST SECTION -->
+            <section class="banner">
+                <h1> league gamers </h1>
+                <a class="button_about" href="">about</a>
+            </section>
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script>
+        function showmenu() {
+
+            document.getElementById("click").classList.toggle("showmenu");
         }
+
+        function clickPoint() {
+
+            document.getElementById("points").classList.toggle("clickPoint");
+            // alert("Eu sou um alert!")
+        }
+
+
 
     </script>
 
