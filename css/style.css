@@ -1,16 +1,16 @@
 /* fonts */
 @font-face {
-    font-family:"Titilium_web";
+    font-family: "Titilium_web";
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
 }
 
 @font-face {
-    font-family:"Quicksand";
+    font-family: 'Quicksand';
     src: url(../assests/fonts/Quicksand/static/Quicksand-Regular.ttf);
 }
 
 @font-face {
-    font-family:"Inter" ;
+    font-family: "Inter";
     src: url(../assests/fonts/Inter/static/Inter-Regular.ttf);
 }
 
@@ -20,13 +20,13 @@
 
 
 /* RESET DA PAGINA */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.layout_grid{
+.layout_grid {
     width: 90%;
     margin: 0 auto;
     height: 100%;
@@ -37,15 +37,15 @@
 /******* MOBILE FIRST ********/
 
 /* COR DE FUNDO */
-body{
-    color:white;
+body {
+    color: white;
     background-color: #1B1426;
 }
 
 
 /* HEADER */
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -54,14 +54,14 @@ header{
     width: 100vw;
     height: 60px;
     background-color: #1B1426;
-    
+
 }
 
 
 /* HEADER TOP */
 
 /* HIDE HEADER TOP IT ONLY APPEARS ON THE DESKTOP */
-header .header_top{
+header .header_top {
 
     display: none;
 }
@@ -74,11 +74,12 @@ header .site_between_center {
     justify-content: space-between;
     align-items: center;
 }
-header .header_bottom{
+
+header .header_bottom {
     height: 100%;
 }
 
-header .header_bottom img.menu   {
+header .header_bottom img.menu {
     width: 86px;
 }
 
@@ -96,22 +97,22 @@ header .header_bottom nav {
     display: flex;
     flex-direction: column;
     /* padding-bottom: 20px; */
-    border-image: linear-gradient(to bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
-    background-image: linear-gradient(to bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
+    border-image: linear-gradient(to bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    background-image: linear-gradient(to bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
 
     transition: left 0.7s;
 }
 
 
- .showmenu{
+.showmenu {
 
     left: 0 !important;
 }
 
 /* o sinal maior ativa somente os links diretos nao ativa o efeito cascata */
 
-header .header_bottom nav > a {
+header .header_bottom nav>a {
 
     /* border: 1px solid #F9AA01; */
     border-bottom: 2px solid #F9AA01;
@@ -120,28 +121,34 @@ header .header_bottom nav > a {
     text-decoration: none;
     font-family: "Inter";
     font-size: 15px;
-    color:white
+    color: white
 }
-header .header_bottom nav > a:last-of-type {
+
+header .header_bottom nav>a:hover {
+
+    background-color: #F9AA01;
+}
+
+header .header_bottom nav>a:last-of-type {
 
     border: none;
 }
 
 header .header_bottom .social_media {
-    position:absolute;
+    position: absolute;
     bottom: 15px;
     left: calc(50% - 100px);
     width: 200px;
     height: 40px;
 
-    display: flex;    
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
-}
-    
 
- header .header_bottom .user_menu {
+}
+
+
+header .header_bottom .user_menu {
     position: fixed;
     top: 60px;
     right: -66px;
@@ -149,42 +156,42 @@ header .header_bottom .social_media {
     width: 17vw;
     height: 23vh;
 
-    
+
     display: flex;
     flex-direction: column;
-    border-image: linear-gradient(to bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
-    background-image: linear-gradient(to bottom, rgba(27,20,38,0.7), rgba(27,20,38,0.4));
+    border-image: linear-gradient(to bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    background-image: linear-gradient(to bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
+
     transition: 0.7s;
-    
- }
 
- .clickPoint{
+}
+
+.clickPoint {
     right: 0 !important;
- }
+}
 
 
- /****** MAIN *********/
+/****** MAIN *********/
 
 
- /* FIRST SECTION */
+/* FIRST SECTION */
 
- main{
+main {
     margin-top: 60px;
- }
+}
 
- main .banner{
+main .banner {
 
     width: 100%;
     height: 606px;
     padding: 40px 0;
-    
+
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 2.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -195,21 +202,21 @@ header .header_bottom .social_media {
     justify-content: space-between;
     align-items: center;
 
- }
+}
 
 
 
- main .banner h1{
+main .banner h1 {
 
     font-family: "Titilium_web";
     font-size: 40px;
     text-shadow: 0 0 8px #FD4255;
     text-transform: capitalize;
-    
- }
+
+}
 
 
- main .button_about{
+main .button_about {
 
     width: 171px;
     height: 40px;
@@ -224,11 +231,11 @@ header .header_bottom .social_media {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: bold;
- }
+}
 
 /* SECOND SECTION */
 
- main .second_sec {
+main .second_sec {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -240,7 +247,7 @@ header .header_bottom .social_media {
     background-color: #1b1426;
 }
 
-main .second_sec .banner_fifa{
+main .second_sec .banner_fifa {
 
     position: relative;
     display: flex;
@@ -253,7 +260,7 @@ main .second_sec .banner_fifa{
 }
 
 
-main .second_sec .box_translucid{
+main .second_sec .box_translucid {
 
     position: absolute;
     bottom: 0;
@@ -261,14 +268,14 @@ main .second_sec .box_translucid{
     width: 335px;
     height: 50px;
 
-    background-image:linear-gradient(to right bottom, rgba(239, 239, 239, 0.6),rgba(239, 239, 239, 0.1));
-    border-image: linear-gradient(to right bottom, rgba(239, 239, 239, 0.6),rgba(239, 239, 239, 0.1));
-    filter: blur( 0 0 4px);
+    background-image: linear-gradient(to right bottom, rgba(239, 239, 239, 0.6), rgba(239, 239, 239, 0.1));
+    border-image: linear-gradient(to right bottom, rgba(239, 239, 239, 0.6), rgba(239, 239, 239, 0.1));
+    filter: blur(0 0 4px);
     border-radius: 8px;
 
 }
 
-main .box_form{
+main .box_form {
 
     display: flex;
     justify-content: center;
@@ -292,7 +299,7 @@ main .box_form span {
     color: black;
     transform: skew(40deg);
 }
-   
+
 main .banner_cs {
     position: relative;
 
@@ -304,7 +311,7 @@ main .banner_cs {
     width: 335.73px;
     height: 189px;
     background-image: url(../assets/images/Card-CS\ GO.png);
-    
+
 }
 
 
@@ -312,13 +319,13 @@ main .banner_cs {
 /* THIRD SECTION */
 
 main .third_sec {
-   position: relative;
+    position: relative;
 
- 
+
     display: flex;
-   flex-direction: column;
-   align-items:center ;
-   
+    flex-direction: column;
+    align-items: center;
+
 
     padding-top: 84px;
 
@@ -327,7 +334,7 @@ main .third_sec {
     background-color: #F9AA01;
 }
 
-main .third_sec h2{
+main .third_sec h2 {
 
     display: flex;
     justify-content: center;
@@ -338,13 +345,13 @@ main .third_sec h2{
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 2px;
-   font-weight: 900;
+    font-weight: 900;
 
 }
 
 main .third_sec hr {
 
-    position: absolute; 
+    position: absolute;
     top: 146px;
     left: 86px;
     width: 204px;
@@ -356,16 +363,16 @@ main .third_sec .first_art {
 
     position: absolute;
     top: 228px;
-    width: 314px;   
+    width: 314px;
     height: 511px;
     background-image: url(../assets/images/kiljoy.png);
 }
 
-main .third_sec .box_content{
+main .third_sec .box_content {
 
     position: absolute;
     top: 143px;
-    left: 95px ;
+    left: 95px;
 
     display: flex;
     flex-direction: column;
@@ -376,13 +383,13 @@ main .third_sec .box_content{
     height: 300px;
 
     border-radius: 8px;
-    background-image: linear-gradient(to bottom right, rgba(122, 49, 236, 0.2),rgba(47, 7, 109, 0.83));
-    backdrop-filter: blur( 10px);
+    background-image: linear-gradient(to bottom right, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
+    backdrop-filter: blur(10px);
 }
 
 main .third_sec .box_content h3 {
 
-    font-family:"Titilium_web";
+    font-family: "Titilium_web";
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
@@ -391,34 +398,34 @@ main .third_sec .box_content h3 {
     height: 27px;
 
 }
- 
- main .third_sec .box_content p{
+
+main .third_sec .box_content p {
 
     font-family: 'Quicksand';
     font-size: 13px;
     text-align: justify;
     width: 176px;
     height: 64px;
- }
+}
 
 
- main .third_sec .second_art {
+main .third_sec .second_art {
 
     position: absolute;
     top: 867px;
     left: 33px;
-    width: 322px;   
+    width: 322px;
     height: 428px;
     background-image: url(../assets/images/backimage_second.png );
 }
 
-main .third_sec .box_teacher{
+main .third_sec .box_teacher {
 
     position: absolute;
     top: 118px;
-    left: -12px ;
+    left: -12px;
 
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -427,13 +434,13 @@ main .third_sec .box_teacher{
     height: 300px;
 
     border-radius: 8px;
-    background-image: linear-gradient(to bottom right, rgba(122, 49, 236, 0.2),rgba(47, 7, 109, 0.83));
-    backdrop-filter: blur( 10px);
-} 
+    background-image: linear-gradient(to bottom right, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
+    backdrop-filter: blur(10px);
+}
 
-main .third_sec .box_teacher h3{
+main .third_sec .box_teacher h3 {
 
-    font-family:"Titilium_web";
+    font-family: "Titilium_web";
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
@@ -442,82 +449,134 @@ main .third_sec .box_teacher h3{
     height: 27px;
 
 }
-main .third_sec .box_teacher p{
+
+main .third_sec .box_teacher p {
 
     font-family: 'Quicksand';
     font-size: 13px;
     text-align: justify;
     width: 176px;
     height: 64px;
- }
+}
 
 
- /* SECTION NEWS  *****************/
+/* SECTION NEWS  *****************/
 
- main .news_sec{
+main .news_sec {
     position: relative;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: space-evenly; */
-    
+
     width: 100%;
     height: 3675px;
 
     background-image: url(../assets/images/backgrund_notícias.png);
- }
+}
 
- main .news_sec h1{
+main .news_sec h1 {
 
     color: white;
-    font-family:"Titilium_web";
+    font-family: "Titilium_web";
     font-size: 18px;
     text-transform: uppercase;
     margin-top: 46px;
- }
+}
 
- main .news_sec hr{
+main .news_sec hr {
     position: absolute;
     top: 112px;
 
     width: 204px;
     border: solid 1px #F9AA01;
- }
-  
- main .news_sec .news{
-   
+}
+
+main .news_sec .news {
+
 
     width: 335px;
     height: 387px;
 
-    margin-top: 100px;
+    margin-top: 45px;
 
     background-image: linear-gradient(to left bottom, rgba(37, 26, 52, 0.34), rgba(5, 1, 12, 0.79));
-    
-    backdrop-filter: blur( 6px);
-    
 
- }
+    backdrop-filter: blur(6px);
 
- main .news_sec .news h2{
 
-    font-family:"Titilium_web";
+}
+
+main .news_sec .unica {
+    margin-top: 100px;
+}
+
+main .news_sec .news h2 {
+
+    font-family: "Titilium_web";
     font-size: 24px;
     font-weight: bold;
     text-transform: capitalize;
     color: white;
     padding-top: 16px;
     padding-left: 25.86px;
- }
+}
 
 
-main .news_sec .news p{
+main .news_sec .news p {
+
+    width: 283px;
+    height: 123px;
     font-family: 'Quicksand';
     font-size: 16px;
     color: white;
-    padding-top: 16px;
+    padding-top: 8px;
     padding-left: 25.86px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    box-shadow: inset 0 30px 60px rgba(0,0,0,1);
+    background-image: url(../assets/images/backgroung_footer.png);
+    background-position: top;
+    background-size: contain;
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+footer #about{
+    width: 100%;
+    height: 304px ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+footer #about p{
+
+    font-family: "Quicksand";
+    font-size: 14px;
+}
+
+footer #sobre > img {
+    width: 110px;
+}
+
+footer #social_midias_footer{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 
 }
 
@@ -529,3 +588,175 @@ main .news_sec .news p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktops >= 1200px*/
+@media screen and (min-width: 1200px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+
+    /* HEADER  */
+    header {
+        position: static;
+        height: 140px;
+    }
+
+
+    /* Header Top */
+
+
+    header .header_top {
+
+        /* block é o valor default da maioria dos elementos */
+
+        display: block;
+        height: 50px;
+
+        border-bottom: 2px solid #F9AA01;
+    }
+
+
+
+    header .header_top .contact_right {
+        width: 415px;
+        display: flex;
+        justify-content: space-evenly;
+
+        font-family: "Inter";
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    header .header_top .contact_right >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        /* border: 1px solid yellow; */
+    }
+
+    header .header_top .social_media {
+        width: 120px;
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+    
+        /* border: 2px solid white; */
+    }
+
+    header .mobile_menu,
+    header .user_menu,
+    header .user_img,
+    header .header_bottom nav .smartphone,
+    header .header_bottom nav .email,
+    header .header_bottom nav .social_media {
+
+        display: none;
+    }
+
+    /* Header Bottom */
+
+    header .header_bottom {
+        height: 90px;
+    }
+
+        header .header_bottom img.menu {
+        width: 200px ;
+    }
+
+    header .header_bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background-color: red; */
+    }
+
+
+    header .header_bottom nav>a {
+        border: none;
+        font-size: 14px;
+    }
+
+    header .header_bottom nav>a:hover {
+        background-color: transparent;
+        color: #F9AA01;
+    }
+
+    header .header_bottom .user_menu {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 120px;
+        height: auto;
+        background-color: transparent;
+    }
+
+    /* MAIN */
+    main {
+        margin-top: 0;
+    }
+
+    /* Banner */
+    main .banner {
+        height: 722px;
+        /* alterar a imagem de fundo */
+        background-image: url(../assets/images/Banner_background_1.png);
+        background-size: cover;
+        background-position: top;
+
+    }
+
+    main .banner h1 {
+        font-size: 80px;
+    }
+
+    /* section second */
+
+    main .second_sec {
+
+        height: 500px;
+        flex-direction: row;
+    }
+
+    main .second_sec .banner_cs {
+
+        width: 556px;
+        height: 313px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    main  .second_sec .banner_fifa{ 
+        width: 556px;
+        height: 313px;
+        background-repeat: no-repeat;
+        background-size: contain;}
+
+
+
+    main .second_sec .box_translucid{
+    width: 556px;
+    }
+
+}
