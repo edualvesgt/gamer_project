@@ -293,7 +293,7 @@ main .box_form {
 
 main .box_form span {
 
-    font-family: "titilium web";
+    font-family: "Titilium_web";
     font-weight: 700;
     font-size: 16px;
     color: black;
@@ -528,7 +528,7 @@ main .news_sec .news p {
 
     width: 283px;
     height: 123px;
-    font-family: 'Quicksand';
+    font-family: "Quicksand";
     font-size: 16px;
     color: white;
     padding-top: 8px;
@@ -575,12 +575,135 @@ footer #social_midias_footer{
 
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 25px;
 
 }
 
+footer .footer_top {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1200px;
+
+}
+
+footer .footer_top .title_useful h3{
+
+    font-family: "Titilium_web";
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+footer .footer_top .title_useful hr{
+
+    border: 2px solid #F9AA01;
+    width: 112px;
+}
+
+
+/* LISTA DE LINKS  */
+
+footer .footer_top .menu_footer{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+
+}
+
+footer .footer_top .menu_footer li{
+    list-style-type: none;
+    width: 110px;
+    margin-bottom: 10px;
+
+}
+
+footer .footer_top .menu_footer a  {
+
+    text-decoration: none;
+    color: white;
+
+    font-family: "Titilium_web";
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+
+}
+
+ footer .footer_top .menu_footer a:before {
+
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
+    
+}
+
+/* CONTATOS */
+
+footer .footer_top #contact {
+
+    color: white;
+    font-family:"Titilium_web" ;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer .footer_top #contact p{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+footer .footer_top #contact p span{
+
+    color: #F9AA01;
+}
+
+/* NEWSLETTER */
+
+footer #newsletter input ,footer #newsletter button {
+
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+footer #newsletter input{
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0));
+    filter: blur(0.5px);
+
+    color: white;
+    padding: 5px 10px;
+    font-family: "Titilium_web";
+    font-size: 16px;
+}
+
+footer #newsletter input::placeholder{
+    color: white;
+}
+
+footer #newsletter button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    font-family: "Titilium_web";
+    font-size: 24px;
+
+    color: #1B1426;
+    font-weight: bold;
+    text-transform: capitalize;
+}
 
 
 
