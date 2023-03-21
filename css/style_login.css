@@ -1,0 +1,259 @@
+/* fonts */
+@font-face {
+    font-family: "Titilium_web";
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(../assests/fonts/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../assests/fonts/Inter/static/Inter-Regular.ttf);
+}
+
+
+
+
+/* RESET DA PAGINA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout_grid {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    /* border: 1px solid red; */
+
+}
+
+/******* MOBILE FIRST ********/
+
+/* COR DE FUNDO */
+body {
+    color: white;
+    background-color: #1B1426;
+}
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    width: 100vw;
+    height: 60px;
+    background-color: #1B1426;
+
+}
+
+
+/* HEADER TOP */
+
+/* HIDE HEADER TOP IT ONLY APPEARS ON THE DESKTOP */
+header .header_top {
+
+    display: none;
+}
+
+/* HEADER BOTTOM */
+
+header .site_between_center {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header_bottom {
+    height: 100%;
+}
+
+header .header_bottom img.menu {
+    width: 86px;
+}
+
+
+
+header .header_bottom nav {
+    position: fixed;
+    top: 60px;
+    left: -80vw;
+    z-index: 22;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 20px; */
+    border-image: linear-gradient(to bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    background-image: linear-gradient(to bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    transition: left 0.7s;
+}
+
+
+.showmenu {
+
+    left: 0 !important;
+}
+
+/* o sinal maior ativa somente os links diretos nao ativa o efeito cascata */
+
+header .header_bottom nav>a {
+
+    /* border: 1px solid #F9AA01; */
+    border-bottom: 2px solid #F9AA01;
+    padding: 30px 0;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 15px;
+    color: white
+}
+
+header .header_bottom nav>a:hover {
+
+    background-color: #F9AA01;
+}
+
+header .header_bottom nav>a:last-of-type {
+
+    border: none;
+}
+
+header .header_bottom .social_media {
+    position: absolute;
+    bottom: 15px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+header .header_bottom .user_menu {
+    position: fixed;
+    top: 60px;
+    right: -66px;
+    z-index: 22;
+    width: 17vw;
+    height: 23vh;
+
+
+    display: flex;
+    flex-direction: column;
+    border-image: linear-gradient(to bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    background-image: linear-gradient(to bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    transition: 0.7s;
+
+}
+
+.clickPoint {
+    right: 0 !important;
+}
+
+/* MAIN */
+
+/* SECTION */
+main{
+    margin-top: 60px;
+}
+
+main .page_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/images/Banner_Login.png);
+    width: 100%;
+    height: 687px;
+}
+
+main .page_login .box_login{
+
+    display: flex ;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    width: 335px;
+    height: 462px;
+
+    backdrop-filter: blur(4px);
+}
+
+main .page_login .box_login hr{
+
+    width: 90px;
+    border:solid 2px #F9AA01;
+}
+main .page_login .box_login h1{
+
+    font-family: "Titilium_web";
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+ /* formulário */
+ main .page_login .box_login .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    margin-top:90px; 
+}
+
+main .page_login .box_login .line{
+
+    width: 273px;
+    height: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-image: linear-gradient(to right bottom,rgba(239, 239, 239, 0.6),rgba(239, 239, 239, 0.1));
+}
+
+main .page_login .box_login .line input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+
+    outline: none;
+    color: #FFFFFF;
+    font-family: "Titilium_web";
+    
+    font-size: 20px;
+    text-transform: lowercase;
+}
+
+
+
+
+

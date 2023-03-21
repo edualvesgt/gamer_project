@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_login.css">
+    <title>Document</title>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <div class="layout_grid site_between_center">
+                <div class="contact_right">
+                    <div class="smartphone">
+                        <img src="assets/icons/icone_telefone.svg" alt="icons phone">
+                        <span>(11) 0900-1010</span>
+                    </div>
+
+                    <div class="email">
+                        <img src="assets/icons/email.svg" alt="icons email">
+                        <span>contato@gamer.com.br</span>
+                    </div>
+                </div>
+                <div class="social_media">
+                    <a href=""> <img src="assets/icons/Nav facebook.svg" alt="icons/link facebook">
+                    </a>
+
+                    <a href=""> <img src="assets/icons/Likedin NAV.svg" alt="icons/link likedin">
+                    </a>
+
+                    <a href=""> <img src="assets/icons/nav instagram.svg" alt="icons/link instagram">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_bottom">
+
+            <div class="layout_grid site_between_center">
+
+                <!-- icon menu -->
+
+                <img class="mobile_menu" src="assets/icons/menu hambueguer.svg" alt="mobile_menu" onclick="showmenu()">
+                <img class="menu" src="assets/images/logotipo-gamer.svg" alt="typelogo gamer">
+
+                <nav class="Menu" id="click">
+
+                    <a href=""> Home</a>
+                    <a href=""> Players</a>
+                    <a href=""> Teams</a>
+                    <a href=""> News</a>
+
+                    <!-- You can only see in Mobile-->
+
+                    <a class="smartphone">
+                        <img src="assets/icons/icone_telefone.svg" alt="icons phone">
+                        <span>(11) 0900-1010</span>
+                    </a>
+
+                    <a class="email">
+                        <img src="assets/icons/email.svg" alt="icons email">
+                        <span>contato@gamer.com.br</span>
+                    </a>
+
+                    <div class="social_media">
+                        <a href=""> <img src="assets/icons/Nav facebook.svg" alt="icons/link facebook">
+                        </a>
+
+                        <a href=""> <img src="assets/icons/Likedin NAV.svg" alt="icons/link likedin">
+                        </a>
+
+                        <a href=""> <img src="assets/icons/nav instagram.svg" alt="icons/link instagram">
+                        </a>
+                    </div>
+
+                </nav>
+
+                <!-- user menu -->
+
+                <img class="user_img" src="assets/icons/menu 3 pontos.svg" alt="user_menu" onclick="clickPoint()">
+
+                <div class="user_menu" id="points">
+                    <a href=""> <img src="assets/icons/profile.svg" alt="Profile">
+                    </a>
+
+                    <a href=""> <img src="assets/icons/shop.svg" alt="Shop">
+                    </a>
+
+                    <a href=""> <img src="assets/icons/search.svg" alt="Search">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="page_login">
+
+            <div class="box_login">
+                <hr>
+                <h1>login</h1>
+
+                <form action="" class="login">
+
+                    <div class="line">
+                        <img src="./assets/icons/icon_login_user.svg" alt="">
+                        <input type="email" placeholder="   Type your e-mail">
+                    </div>
+            
+                </form> 
+            
+            </div>
+
+        </section>
+    </main>
+
+
+    <script>
+        function showmenu() {
+
+            document.getElementById("click").classList.toggle("showmenu");
+        }
+
+        function clickPoint() {
+
+            document.getElementById("points").classList.toggle("clickPoint");
+            // alert("Eu sou um alert!")
+        }
+
+        
+    </script>
+    
+    
+    
+</body>
+
+</html>
