@@ -195,13 +195,22 @@ main .page_login .box_login{
 
     display: flex ;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 
     width: 335px;
     height: 462px;
 
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
+
+    background: linear-gradient(90deg,rgba(27, 20, 38, 0.6),rgba(60, 3, 65, 0.38))border-box;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image-slice: 1;
+    border-radius: 8px;
+
 }
 
 main .page_login .box_login hr{
@@ -228,18 +237,35 @@ main .page_login .box_login h1{
     margin-top:90px; 
 }
 
-main .page_login .box_login .line{
+main .page_login .line{
 
     width: 273px;
     height: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: transparent ;
+    background: linear-gradient(90deg,rgba(239, 239, 239, 0.6),rgba(239, 239, 239, 0.1))padding-box, linear-gradient(90deg, rgba(239, 239, 239, 0.6),rgba(239, 239, 239, 0.1))border-box;
 
-    background-image: linear-gradient(to right bottom,rgba(239, 239, 239, 0.6),rgba(239, 239, 239, 0.1));
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image-slice: 1;
+    border-radius: 8px;
+
+    
 }
 
-main .page_login .box_login .line input{
+main .page_login .line img{
+
+    width: 20px;
+    height: 20px;
+
+    margin-left: 16px;
+}
+
+main .page_login  .line input{
     width: 100%;
     height: 35px;
     border: none;
@@ -251,6 +277,10 @@ main .page_login .box_login .line input{
     
     font-size: 20px;
     text-transform: lowercase;
+}
+
+main .page_login .password{
+    margin-top: 31px;
 }
 
 

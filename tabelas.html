@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        h1{
+            text-align: center;
+        }
+
+        table{
+            width: 50%;
+            margin: 20px auto  0 ;
+            border:solid 1px black;
+
+        }
+
+        table  tr th
+         {
+            /* border: solid 1px red; */
+            text-align: center;
+        }
+
+        table tbody td{
+            border-right: 2px solid blue;
+        }
+
+        table tbody td :last-of-type{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1> Cadastro de equipes</h1>
+    <table >
+
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>photo</th>
+                <th>&clubs;</th>
+            </tr>
+            
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1 jogador</td>
+                <td>Eduardo</td>
+                <td><img src="assets/icons/back_to_top.svg" alt=""></td>
+                <td><img src="assets/icons/controle.svg" alt=""></td>
+            </tr>
+            <tr>
+                <td>2 jogador </td>
+                <td>machado</td>
+                <td><img src="assets/icons/back_to_top.svg" alt=""></td>
+                <td><img src="assets/icons/controle.svg" alt=""></td>
+            </tr>
+            <tr>
+                <td>3 jogador </td>
+                <td>isaac</td>
+                <td><img src="assets/icons/back_to_top.svg" alt=""></td>
+                <td><img src="assets/icons/controle.svg" alt=""></td>
+            </tr>
+            <tr>
+                <td>4 jogador </td>
+                <td>ana</td>
+                <td><img src="assets/icons/back_to_top.svg" alt=""></td>
+                <td><img src="assets/icons/controle.svg" alt=""></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">total</td>
+                <td>voce nn vale nd</td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+</body>
+</html>
